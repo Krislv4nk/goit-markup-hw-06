@@ -122,6 +122,13 @@ img {
         .h-address {
             font-style: normal;
         }
+        .container {
+            width: 100%;
+            min-width: 320px;
+            padding: 0 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .current {
             position: relative;
@@ -194,30 +201,24 @@ margin-top: 48px;
 
 
   .section {  
-        padding: 120px 0;
+        /* padding: 120px 0; */
+        padding-top: 96px;
+        padding-bottom: 96px;
   }
-  .third-section {
-    padding-bottom: 120px;
-  }
+  
 
 .features {
 display: flex;
-gap: 24px; 
+flex-wrap: wrap;
+/* gap: 24px;  */
+gap: 72px;
+
 } 
-.cube {
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        margin-bottom: 8px;
-}
-.icons-point {
-    margin: 24px 100px
-}
+
 .element {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
+    
 }
 .points {
             font-weight: 500;
@@ -225,16 +226,21 @@ gap: 24px;
             line-height: 1.2;
             letter-spacing: 0.02em;
             color: var(--main-color,#2E2F42);
+            margin-bottom: 8px;
+text-align: center;
 }
-.indent {
-    margin-bottom: 8px;
-}
+
 .point-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-color,#434455);
+    
+
 }
+.third-section {
+    padding-bottom: 120px;
+  }
 
 .title {
     font-size: 36px;
@@ -347,11 +353,7 @@ fill: var(--super-blue);
     color: var(--super-blue);
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 .down { 
     background: var(--main-color,#2E2F42);
@@ -841,4 +843,53 @@ font-weight: 500;
 }
 .modal-form-bttn:hover {
     background-color: var(--super-blue);
+}
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .features {
+        gap: 72px;
+        column-gap: 24px;
+    }
+    .element {
+    width: calc((100% - 24px) / 2);
+}
+}
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        margin: 0 auto;
+            padding: 0 15px;
+    }
+    .section {
+        padding: 120px 0;
+    }
+    .features {
+        gap: 24px;
+    }
+    .element {
+    width: calc((100% - 72px) / 4); 
+}
+.cube {
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+}
+.icons-point {
+    margin: 24px 100px
+}
 }
