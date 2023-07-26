@@ -201,7 +201,6 @@ margin-top: 48px;
 
 
   .section {  
-        /* padding: 120px 0; */
         padding-top: 96px;
         padding-bottom: 96px;
   }
@@ -210,15 +209,15 @@ margin-top: 48px;
 .features {
 display: flex;
 flex-wrap: wrap;
-/* gap: 24px;  */
 gap: 72px;
 
 } 
+.cube {
+    display: none;
+}
 
 .element {
-    /* width: calc((100% - 72px) / 4); */
     width: 100%;
-    
 }
 .points {
             font-weight: 500;
@@ -260,8 +259,11 @@ width: calc((100% - 48px) / 3);
 }
 
 .pictures {
+/* display: flex;
+gap: 24px; */
 display: flex;
-gap: 24px;
+flex-wrap: wrap;
+gap: 72px;
 }
 .card {
     border-radius: 0px 0px 4px 4px;
@@ -269,12 +271,14 @@ background: var(--white, #FFF);
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 padding: 32px 0;
 }
-.avatar{
-    width: calc((100% - 72px) / 4);
+.avatar {
+    /* width: calc((100% - 72px) / 4); */
+    max-width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+        margin: auto;
 }
 .team {
     background: var(--cloud, #F4F4FD);
@@ -843,53 +847,4 @@ font-weight: 500;
 }
 .modal-form-bttn:hover {
     background-color: var(--super-blue);
-}
-@media screen and (min-width: 428px) {
-    .container {
-        max-width: 428px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-    .section {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-    .features {
-        gap: 72px;
-        column-gap: 24px;
-    }
-    .element {
-    width: calc((100% - 24px) / 2);
-}
-}
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        margin: 0 auto;
-            padding: 0 15px;
-    }
-    .section {
-        padding: 120px 0;
-    }
-    .features {
-        gap: 24px;
-    }
-    .element {
-    width: calc((100% - 72px) / 4); 
-}
-.cube {
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        margin-bottom: 8px;
-}
-.icons-point {
-    margin: 24px 100px
-}
 }
