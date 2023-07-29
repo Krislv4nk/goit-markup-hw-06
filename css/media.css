@@ -21,7 +21,28 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
-
+    .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet.jpg);
+    width: 768px;
+    }
+    @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet@2x.jpg);
+    }
+ }
+    .eff-sol {
+      font-size: 56px;
+         line-height: 1.07;
+         width: 496px;
+    }
+    .bttn {
+        margin-top: 36px;
+    }
+    
     .features {
         row-gap: 72px;
         column-gap: 24px;
@@ -113,6 +134,7 @@ margin: 0;
 }
 .li-pict {
      flex-basis: calc((100% - 24px) / 2);
+     max-width: 356px;
 }
 
 
@@ -128,6 +150,26 @@ margin: 0;
     }
     .section {
         padding: 120px 0;
+    }
+    .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    width: 1440px;
+    }
+    @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/hero-bg@2x.jpg);
+    }
+ }
+    .hero {
+        padding: 188px 0;
+    }
+    
+    .bttn {
+        margin-top: 48px;
     }
     .features {
         gap: 24px;
@@ -188,7 +230,7 @@ width: calc((100% - 48px) / 3);
     margin: 0;
 }
 .emblem {
-    width: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 120px) / 6);
 }
 .footer-container { 
         display: flex;
@@ -210,6 +252,25 @@ width: calc((100% - 48px) / 3);
         display: flex; 
          gap: 24px;
     }
+    .portfolio-section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+    .main-type {
+        justify-content: center;
+        margin-bottom: 72px;
+        flex-wrap: nowrap;
+    }
+    .portfolio-pict {
+        column-gap: 24px;
+    row-gap: 48px;
+    }
+    .li-pict {
+        flex-basis: calc((100% - 48px) / 3); 
+       max-width: 360px;
+    }
+
+
 }
 
  
