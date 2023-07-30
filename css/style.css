@@ -34,7 +34,9 @@ ul {
 } 
 img {
     display: block;
-}
+    max-width: 100%;
+    height: auto;
+  }
 
     .link {
             text-decoration: none;
@@ -45,14 +47,7 @@ img {
         } 
 
 
-    .nav-menu {
-        font-weight: 500;
-        color: var(--main-color,#2E2F42);
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
     
     .link:hover {
         color: var(--super-blue);
@@ -74,10 +69,7 @@ img {
     .highlight {
         color: var(--main-color);
     }
-        .header-content {
-            display: flex;
-            align-items: center;
-        }
+        
         .main-menu {
             box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -90,38 +82,55 @@ img {
             display: flex;
             align-items: center;
         }
-         .logotype {
-                margin-right: 76px;
-         }
-                                 .callout{
-                                    padding: 24px 0;
-                                 }
-                                 .zero {
-                                    margin-right: 0;
-                                 }
-
+        .mobile-cont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .mobile-menu-open-bttn {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            border: none;
+            background-color: transparent;
+        }
+        .hamburger {
+           stroke: var(--main-color);
+           stroke-width: 1px;
+            
+        }
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--white);
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            padding: 24px 24px 40px 40px;
+        }
+        .mobile-menu-close-bttn {
+            display: block;
+            margin-left: auto;
+            margin-bottom: 32px;
+        }
+        .mob-link {
+            color: var(--main-color);
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+        }
+         
+                                 
          .menu-content {
-                    display: inline-flex;
-                        gap: 40px;
+                    display: none;
                  }
          .contacts-content {
-            margin: auto;
-                 }
-                 .inline {
-                    display: flex;
-                    gap: 40px;
-                 }
-
-    .adress-item {
-        color: var(--second-color, #434455);
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-        .h-address {
-            font-style: normal;
-        }
+            display: none;
+         }
+    
         .container {
             width: 100%;
             min-width: 320px;
@@ -148,8 +157,10 @@ img {
 .solutions {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mobile.jpg);
+
     max-width: 100%;
-    width: 428px;
+    /* max-width: 428px; */
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -191,7 +202,7 @@ margin-top: 72px;
          /* line-height: 1.07; */
          line-height: 1.11;
          letter-spacing: 0.02em;
-         width: 320px;
+         /* width: 320px; */
         cursor: pointer;
         margin: 0 auto;
         }
