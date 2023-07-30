@@ -42,18 +42,10 @@
     .callout{
         padding: 24px 0;
      }
-     .zero {
-        margin-right: 0;
-     }
-
-
-
-     .contacts-content {
-        margin: auto;
-             }
              .inline {
-                display: flex;
-                gap: 40px;
+                display: block;
+                /* display: flex;
+                gap: 40px; */
              }
              .adress-item {
                 color: var(--second-color, #434455);
@@ -73,7 +65,7 @@
     .solutions {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet.jpg);
-    /* width: 768px; */
+    
     }
     @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -208,7 +200,7 @@ margin: 0;
     .solutions {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
-    width: 1440px;
+    
     }
     @media (min-device-pixel-ratio: 2),
  (min-resolution: 192dpi),
@@ -324,7 +316,13 @@ width: calc((100% - 48px) / 3);
        max-width: 360px;
     }
 
-
+    .contacts-content {
+        margin-right: 0;
+             }
+             .inline {
+                display: flex;
+                gap: 40px;
+             }
 }
 
  

@@ -52,6 +52,9 @@ img {
     .link:focus {
         color: var(--super-blue);
     }
+    .no-scroll {
+        overflow: hidden;
+    }
 
     .logo {
             font-size: 18px;
@@ -172,20 +175,13 @@ letter-spacing: 0.02em;
         .mob-social-media {
             display: flex;
         gap: 56px;
-        justify-content: center;
-        margin-top: 8px;
-        
+        padding-top: 8px;
         }
-        
-         
-                                 
-         .menu-content {
-                    display: none;
-                 }
-         .contacts-content {
+        .menu-content, .inline {
             display: none;
-         }
-    
+        }
+         
+         
         .container {
             width: 100%;
             min-width: 320px;
