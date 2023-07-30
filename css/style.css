@@ -46,9 +46,6 @@ img {
             list-style-type: none;
         } 
 
-
-    
-    
     .link:hover {
         color: var(--super-blue);
     }
@@ -93,12 +90,24 @@ img {
             margin-bottom: 24px;
             border: none;
             background-color: transparent;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .hamburger {
            stroke: var(--main-color);
            stroke-width: 1px;
-            
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .mobile-menu-open-bttn:is(:hover, :focus) .hamburger {
+            stroke: var(--super-blue);
+            }
+            .mobile-menu-open-bttn:hover {
+                border-color: var(--super-blue);
+                color: var(--super-blue);
+            }
+            .mobile-menu-open-bttn:focus {
+                border-color: var(--super-blue);
+                color: var(--super-blue);
+            }
         .mobile-menu {
             position: fixed;
             top: 0;
@@ -108,12 +117,39 @@ img {
             height: 100vh;
             z-index: 2;
             padding: 24px 24px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
+        
         .mobile-menu-close-bttn {
             display: block;
             margin-left: auto;
             margin-bottom: 32px;
+            cursor: pointer;
+               content: "";
+               border-radius: 50%;
+               transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .mobile-icon {
+            fill: var(--main-color);
+         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         }
+
+                         .mobile-menu-close-bttn:hover {
+                        background-color: var(--super-blue);
+                         border: none;
+                         }
+                         .mobile-menu-close-bttn:focus {
+                             background-color: var(--super-blue);
+                             border: none;
+                         }
+                         .mobile-menu-close-bttn:is(:hover, :focus) .mobile-icon {
+ fill: var(--moonlight);
+}
+.mob-menu-li:not(:last-child) {
+      margin-bottom: 40px;
+}
         .mob-link {
             color: var(--main-color);
 font-size: 36px;
@@ -121,6 +157,16 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+        }
+        .mob-address-item {
+            color: var(--main-color);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; 
+letter-spacing: 0.02em;
+        }
+        .mob-address-ul {
+            
         }
          
                                  
