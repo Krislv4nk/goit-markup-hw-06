@@ -57,6 +57,21 @@
                 .h-address {
                     font-style: normal;
                 }
+                .current {
+                    position: relative;
+                    color: var(--super-blue);
+                }
+                .current::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    border-radius: 2px;
+                    bottom: 0;
+                    left: 0;
+                    height: 4px;
+                    background-color: var(--super-blue);
+                    bottom: -1px;
+                }
 
     .section {
         padding-top: 96px;
