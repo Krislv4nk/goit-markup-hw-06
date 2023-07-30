@@ -39,13 +39,13 @@
                 </ul>
             </address>
         
-        <button type="button" class="mobile-menu-open-bttn"><svg class="hamburger" width="32"height="22"><use href="./images/icons.svg#icon-menu-hamburger"></use>
+        <button type="button" class="mobile-menu-open-bttn" mobile-open><svg class="hamburger" width="32"height="22"><use href="./images/icons.svg#icon-menu-hamburger"></use>
             </svg>
         </button>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu is-hidden" mobile>
         <div>
-        <button type="button" class="mobile-menu-close-bttn">
+        <button type="button" class="mobile-menu-close-bttn" mobile-close>
             <svg class="mobile-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
             </svg></button>
@@ -63,7 +63,7 @@
                     <li class="mob-address-li"><a href="mailto:info@devstudio.com" class="link mob-address-item">info@devstudio.com</a>
                     </li>
                 </ul>
-                <ul class="list social-media">
+                <ul class="list mob-social-media">
                     <li class="social-media-ellipse"><a class="ellipse link" href="" aria-label="instagram"
                             target="_blank" rel="nooppener no-referrer"><svg class="icon-color" width="24"
                                 height="24">
@@ -427,6 +427,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
 </body>
 
 </html>

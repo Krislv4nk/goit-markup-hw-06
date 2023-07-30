@@ -129,6 +129,7 @@ img {
             cursor: pointer;
                content: "";
                border-radius: 50%;
+               border-color: var(--lightslate);
                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .mobile-icon {
@@ -158,6 +159,9 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
         }
+        .mob-address-li {
+            padding-bottom: 40px;
+        }
         .mob-address-item {
             color: var(--main-color);
 font-size: 20px;
@@ -165,9 +169,14 @@ font-weight: 500;
 line-height: 1.2; 
 letter-spacing: 0.02em;
         }
-        .mob-address-ul {
-            
+        .mob-social-media {
+            display: flex;
+        gap: 56px;
+        justify-content: center;
+        margin-top: 8px;
+        
         }
+        
          
                                  
          .menu-content {
