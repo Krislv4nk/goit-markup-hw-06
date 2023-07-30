@@ -632,7 +632,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 .portfolio-link {
     display: block;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition: translateY(0%);
+   transition: translateY(0%) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -868,7 +868,7 @@ border-color: var(--logo-color);
 .modal-textarea::placeholder {
         font-size: 12px;
         line-height: 1.17;
-        letter-spacing: 0.03;
+        letter-spacing: 0.03em;
 } 
 .is-hidden {
   opacity: 0;
