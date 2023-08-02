@@ -223,10 +223,6 @@ letter-spacing: 0.02em;
     
     
  }
- .eff-sol {
-    width: 100%;
-    max-width: 320px;
- }
  
  .bttn {
 min-width: 169px;
@@ -251,6 +247,8 @@ margin-top: 72px;
          /* width: 320px; */
         cursor: pointer;
         margin: 0 auto;
+        width: 100%;
+    max-width: 320px;
         }
 .click {
                 background-color: var(--logo-color);
