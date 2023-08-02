@@ -14,7 +14,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--second-color,#434455);
-    background-color:var(--moonlight)
+    background-color:var(--moonlight);
+    
 }
 
 
@@ -192,6 +193,7 @@ letter-spacing: 0.02em;
             padding: 0 16px;
             margin-left: auto;
             margin-right: auto;
+            overflow-x: hidden;
         }
 .solutions {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
