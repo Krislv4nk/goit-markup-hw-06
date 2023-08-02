@@ -49,9 +49,12 @@
              }
              .adress-item {
                 color: var(--second-color, #434455);
-                font-size: 16px;
+                font-size: 12px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+                /* font-size: 16px;
                 line-height: 1.5;
-                letter-spacing: 0.02em;
+                letter-spacing: 0.02em; */
                 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
                 .h-address {
@@ -102,7 +105,7 @@
     .features {
         row-gap: 72px;
         column-gap: 24px;
-        
+       
     }
     .cube {
         display: none;
@@ -141,16 +144,21 @@
 }
 
 .footer-container { 
-    display: flex;
-   flex-wrap: wrap;
-   gap: 24px;
+   column-gap: 24px;
+   row-gap: 72px;
    padding: 0 108px;
+   flex-wrap: wrap;
+   flex-direction: row;
 }
 .lp-cont {
-   margin: 0;
+    margin: 0;
 }
 .mark {
-   padding-left: 0;
+ align-items: left; 
+ justify-content: flex-start;
+}
+.down-text {
+    width: 264px;
 }
 .sm-cont {
 margin: 0;
@@ -163,7 +171,7 @@ margin: 0;
 }
 
 .footer-foorm-paragraph {
-    margin-left: 0;
+    text-align: left;
 }
 .footer-input {
     width: 264px;
@@ -192,7 +200,10 @@ margin: 0;
      flex-basis: calc((100% - 24px) / 2);
      max-width: 356px;
 }
-
+.modal-window {
+    padding-left: 24px;
+         padding-right: 24px;
+}
 
 }
 
@@ -205,7 +216,11 @@ margin: 0;
         padding: 0 15px;
     }
     
-
+    .adress-item {
+        font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+    }
 
 
 
@@ -240,6 +255,14 @@ margin: 0;
     }
     .element {
     width: calc((100% - 72px) / 4); 
+}
+.points {
+   font-weight: 500; 
+   font-size: 20px;
+    line-height: 1.2;
+}
+.point-text, .team-title {
+    font-weight: 400px;
 }
 
 .cube {
