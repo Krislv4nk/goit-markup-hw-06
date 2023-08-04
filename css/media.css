@@ -2,6 +2,9 @@
     .container {
         max-width: 428px;
     }
+    .mob-social-media {
+        gap: 56px;
+    }
     .third-section {
         display: none;
     }
@@ -9,6 +12,12 @@
 @media screen and (max-width: 428px) {
     .third-section {
         display: none;
+    }
+    .mob-link {
+        font-size: 26px;
+    }
+    .mob-social-media {
+        justify-content: space-between;
     }
 }
 
@@ -44,6 +53,7 @@
      }
              .inline {
                 display: block;
+                margin-bottom: 12px;
                 /* display: flex;
                 gap: 40px; */
              }
@@ -97,7 +107,9 @@
       font-size: 56px;
          line-height: 1.07;
          width: 496px;
+         max-width: 496px;
     }
+    
     .bttn {
         margin-top: 36px;
     }
@@ -247,6 +259,7 @@ margin: 0;
     .bttn {
         margin-top: 48px;
     }
+    
     .features {
         gap: 24px;
         display: flex;

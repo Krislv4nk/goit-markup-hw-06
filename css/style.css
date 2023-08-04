@@ -179,7 +179,8 @@ letter-spacing: 0.02em;
         }
         .mob-social-media {
             display: flex;
-        gap: 56px;
+        /* gap: 56px; */
+        
         padding-top: 8px;
         }
         .menu-content, .inline {
